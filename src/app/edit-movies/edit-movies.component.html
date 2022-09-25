@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-xs-12">
+        <app-review-movie
+        (reviewAdded)="onReviewAdded($event)"></app-review-movie>
+        <hr>
+        <ul class="list-group">
+            <a href="" class="list-group-item"
+            style="cursor: pointer;" 
+            *ngFor="let review of reviews">
+                {{review.movie}}: {{review.quote}}
+            </a>
+        </ul>
+    </div>
+</div>

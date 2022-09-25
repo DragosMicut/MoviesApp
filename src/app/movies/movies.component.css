@@ -1,0 +1,7 @@
+.movies-menu{
+    max-height: 50vh;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
