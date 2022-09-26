@@ -7,4 +7,4 @@ app.get('/*',(req,res)=>{
     res.sendFile(__dirname+'/dist/movies-list/index.html')
 })
 
-app.listen(process.env.port ||8080)
+app.listen(process.env.PORT ||8080)
