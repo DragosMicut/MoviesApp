@@ -16,8 +16,7 @@ export class EditMoviesComponent implements OnInit {
   @Input()  movie!: Movie;
 
 
-  constructor(private movieListService:MovieListService,
-    private reviewService:ReviewService) { }
+  constructor(private reviewService:ReviewService) { }
 
   ngOnInit() {
     this.reviews = this.reviewService.reviews;

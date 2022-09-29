@@ -1,7 +1,8 @@
     <a 
-    href="#" 
-    class="list-group-item clearfix"
-    (click)="onSelected()">
+    [routerLink]="[title]"
+    routerLinkActive="active"
+    style="cursor: pointer;"
+    class="list-group-item clearfix">
     <div class="row">
         <div class="col col-md-6">
             <div class="pull-left">

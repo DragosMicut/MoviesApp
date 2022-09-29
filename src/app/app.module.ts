@@ -13,6 +13,8 @@ import { ReviewMovieComponent } from './edit-movies/review-movie/review-movie.co
 import { WatchlistComponent } from './watchlist/watchlist.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { MovieListService } from './movies/movies-list/movie-list.service';
+import { AppRouting } from './app-routing.module';
+import { MovieDetailStartComponent } from './movie-detail-start/movie-detail-start.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { MovieListService } from './movies/movies-list/movie-list.service';
     MoviesDetailComponent,
     ReviewMovieComponent,
     WatchlistComponent,
-    DropdownDirective
+    DropdownDirective,
+    MovieDetailStartComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouting
   ],
   providers: [MovieListService],
   bootstrap: [AppComponent]

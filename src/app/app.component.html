@@ -1,10 +1,8 @@
-  <app-header (featureSelected)="onNavigate($event)"></app-header>
+  <app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-movies *ngIf="loadedFeature==='movie'"></app-movies>
-      <app-edit-movies *ngIf="loadedFeature==='movie-reviews'"></app-edit-movies>
-      <app-watchlist *ngIf="loadedFeature==='fav-movies'"></app-watchlist>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

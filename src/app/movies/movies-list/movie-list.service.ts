@@ -1,4 +1,5 @@
 import { EventEmitter } from "@angular/core";
+import { find } from "rxjs";
 import { Review } from "src/app/shared/review.model";
 import { Movie } from "../movie.model";
 
@@ -32,6 +33,13 @@ export class MovieListService{
 
     getMovies(){
         return this.movies.slice()
+    }
+
+    
+    getMovie(name:string){
+        const filteredMovies = this.movies.filter(item => item.title.includes(name));
+        return filteredMovies[0];
+
     }
 
     getFavMovies(){
